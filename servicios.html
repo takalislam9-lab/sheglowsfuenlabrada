@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — She Glows · Fuenlabrada</title>
+<meta name="description" content="Servicios de She Glows en Fuenlabrada.">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="She Glows, inicio"><img src="logo.jpg" alt="" class="logo-badge"><span class="logo-text"><span class="script">She Glows</span><small>Diseñamos tu mirada</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="pestanas">Pestañas</button>
+  <button class="tab-btn" data-tab="cejas">Cejas</button>
+  <button class="tab-btn" data-tab="facial">Facial</button>
+  <button class="tab-btn" data-tab="corporal">Corporal</button>
+  
+</div>
+
+<div class="tab-panel active" id="pestanas">
+  <div class="tab-intro"><span class="script">Mirada</span><h2>Pestañas</h2><p>Extensiones de todo tipo de volumen y lifting.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('extensiones')"><img src="ig_pestanas_perfil.jpg" alt="Extensiones de pestañas" loading="lazy"><div class="cat-card-text"><h3>Extensiones de pestañas</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('lifting')"><img src="ig_pestanas_cejas.jpg" alt="Lifting y laminado" loading="lazy"><div class="cat-card-text"><h3>Lifting y laminado</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="cejas">
+  <div class="tab-intro"><span class="script">Diseño</span><h2>Cejas</h2><p>Diseño de cejas con henna, hilo y micropigmentación.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('cejas')"><img src="ig_cejas.jpg" alt="Diseño de cejas" loading="lazy"><div class="cat-card-text"><h3>Diseño de cejas</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="facial">
+  <div class="tab-intro"><span class="script">Piel</span><h2>Tratamientos faciales</h2><p>Piel luminosa con la última tecnología.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('facial')"><img src="u_facial.jpg" alt="Tratamientos faciales" loading="lazy"><div class="cat-card-text"><h3>Tratamientos faciales</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="corporal">
+  <div class="tab-intro"><span class="script">Cuerpo</span><h2>Tratamientos corporales</h2><p>Moldea y tonifica tu cuerpo.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('corporal')"><img src="u_corporal.jpg" alt="Tratamientos corporales" loading="lazy"><div class="cat-card-text"><h3>Tratamientos corporales</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('laser')"><img src="u_laser.jpg" alt="Depilación láser y bronceado" loading="lazy"><div class="cat-card-text"><h3>Depilación láser y bronceado</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34622620492" target="_blank" rel="noopener" style="color:var(--red)">622 62 04 92</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-extensiones"><div class="modal">
+  <button class="modal-close" onclick="closeModal('extensiones')" aria-label="Cerrar">×</button>
+  <h3>Extensiones de pestañas</h3><p class="modal-sub">Todo tipo de volumen</p>
+  <div class="svc-row"><div><div class="svc-name">Clásicas / híbridas</div><span class="svc-desc">Naturales, con retoque a las 3 semanas.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Look Glow</div><span class="svc-desc">Nuestro look estrella.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Look Princess (2D y 3D)</div><span class="svc-desc">Más volumen y densidad.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Retoques y retirada</div><span class="svc-desc">Retoque express y retirada de extensiones.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/7993_she-glows_cejas-y-pestanas_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34622620492?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20extensiones%20de%20pesta%C3%B1as" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-lifting"><div class="modal">
+  <button class="modal-close" onclick="closeModal('lifting')" aria-label="Cerrar">×</button>
+  <h3>Lifting y laminado</h3><p class="modal-sub">Mirada natural</p>
+  <div class="svc-row"><div><div class="svc-name">Lifting de pestañas</div><span class="svc-desc">Pestañas elevadas desde la raíz.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Laminado de cejas</div><span class="svc-desc">Cejas peinadas y definidas.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/7993_she-glows_cejas-y-pestanas_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34622620492?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20lifting%20y%20laminado" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-cejas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('cejas')" aria-label="Cerrar">×</button>
+  <h3>Diseño de cejas</h3><p class="modal-sub">Cejas a tu medida</p>
+  <div class="svc-row"><div><div class="svc-name">Depilación de cejas con hilo con diseño</div><span class="svc-desc">Precisión para tu forma de ceja.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Diseño de cejas con henna</div><span class="svc-desc">Color y forma con henna.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Micropigmentación de cejas (shading)</div><span class="svc-desc">Cejas definidas y duraderas.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Depilación facial</div><span class="svc-desc">Rostro libre de vello.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/7993_she-glows_cejas-y-pestanas_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34622620492?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1o%20de%20cejas" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-facial"><div class="modal">
+  <button class="modal-close" onclick="closeModal('facial')" aria-label="Cerrar">×</button>
+  <h3>Tratamientos faciales</h3><p class="modal-sub">Glow facial</p>
+  <div class="svc-row"><div><div class="svc-name">Limpieza facial</div><span class="svc-desc">Piel limpia y luminosa.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Hollywood peel</div><span class="svc-desc">Luminosidad al instante.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">IPL facial</div><span class="svc-desc">Tono más uniforme.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Diatermia / Indiba / radiofrecuencia</div><span class="svc-desc">Firmeza y luminosidad.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">HIFU facial y Plasma Pen</div><span class="svc-desc">Efecto lifting.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Peelings químicos</div><span class="svc-desc">Renovación de la piel.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/7993_she-glows_cejas-y-pestanas_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34622620492?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20faciales" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-corporal"><div class="modal">
+  <button class="modal-close" onclick="closeModal('corporal')" aria-label="Cerrar">×</button>
+  <h3>Tratamientos corporales</h3><p class="modal-sub">Body glow</p>
+  <div class="svc-row"><div><div class="svc-name">Tensamax</div><span class="svc-desc">Tonificación de abdomen y cuerpo.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">HIFU corporal</div><span class="svc-desc">Reafirmación sin cirugía.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Presoterapia y sauna infrarroja</div><span class="svc-desc">Piernas ligeras y detox.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Maderoterapia y masajes</div><span class="svc-desc">Modelado y relajación.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Glúteos push up</div><span class="svc-desc">Tonifica y eleva.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Ritual detox de pies con reflexología</div><span class="svc-desc">Relax de pies a cabeza.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/7993_she-glows_cejas-y-pestanas_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34622620492?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20corporales" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-laser"><div class="modal">
+  <button class="modal-close" onclick="closeModal('laser')" aria-label="Cerrar">×</button>
+  <h3>Depilación láser y bronceado</h3><p class="modal-sub">Piel perfecta</p>
+  <div class="svc-row"><div><div class="svc-name">Depilación láser</div><span class="svc-desc">Despídete del vello.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Bronceado con caña de azúcar (DHA)</div><span class="svc-desc">Bronceado natural sin sol.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/7993_she-glows_cejas-y-pestanas_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34622620492?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20depilaci%C3%B3n%20l%C3%A1ser%20y%20bronceado" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para She Glows - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="ig-fab" href="https://www.instagram.com/she_glows_official/" target="_blank" rel="noopener" aria-label="Visitar Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="white"/></svg></a><a class="wa-fab" href="https://wa.me/34622620492?text=Hola%2C%20quiero%20pedir%20cita%20en%20She%20Glows" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
